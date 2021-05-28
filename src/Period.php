@@ -17,7 +17,7 @@ class Period
         return new static($startDate, $endDate);
     }
 
-    public static function days(int $numberOfDays): static
+    public static function days(int $numberOfDays)
     {
         $endDate = Carbon::today();
 
@@ -26,7 +26,7 @@ class Period
         return new static($startDate, $endDate);
     }
 
-    public static function months(int $numberOfMonths): static
+    public static function months(int $numberOfMonths)
     {
         $endDate = Carbon::today();
 
@@ -35,7 +35,7 @@ class Period
         return new static($startDate, $endDate);
     }
 
-    public static function years(int $numberOfYears): static
+    public static function years(int $numberOfYears)
     {
         $endDate = Carbon::today();
 
